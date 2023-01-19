@@ -15,6 +15,8 @@ More specifically the app demonstrates how to [Authenticate with Firebase Anonym
 ## App Structure
 
 The app consists of 2 screens - login & main. In the login screen a user can login to Firebase *annonymously*. This is just for demonstration purpose, the AuthService that handles all authentication logic can be extended easly to sign in using other methods.
-Onced logged in the user is redirected to app's main page that consists of Users list, which is empty by default, and reload button.
+
+Once logged in the user is redirected to app's main page that consists of Users list, which is empty by default, and reload button.
 Clicking on the button will trigger query from users collection, assuming such collection exists :)
-Notice this is just a sample collection, not to be confused with Authentication's Users list.
+
+Notice this is just a sample collection, not to be confused with Authentication's Users list. UsersRepository can be adjusted to query for any other collection with some possible filters if needed.
