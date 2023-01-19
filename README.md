@@ -1,16 +1,11 @@
-# flutter_bloc_firestore_sample_app
+# flutter_bloc Firestore Sample App
 
-A new Flutter project.
+This sample app demonstrates how to use [flutter_bloc](https://pub.dev/packages/flutter_bloc) with [Cloud Firestore](https://firebase.google.com/docs/firestore/).
 
-## Getting Started
+More specifically the app demonstrates how to [Authenticate with Firebase Anonymously](https://firebase.google.com/docs/auth/flutter/anonymous-auth) and how to [Get realtime updates with Cloud Firestore](https://firebase.google.com/docs/firestore/query-data/listen).
 
-This project is a starting point for a Flutter application.
+## Resources
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Bloc Library: Basics & Beyond](https://www.youtube.com/watch?v=knMvKPKBzGE) by [Felix Angelov](https://github.com/felangel) - a good introduction to flutter_bloc
+- [How to Get Data From Cloud Firestore using The BloC Pattern](https://www.youtube.com/watch?v=O8-Q6RyO8QY) - this was the main resource I used for this sample app, however since the sample app uses flutter_bloc 8.1.1 and this tutorial uses older version, I had to replace its [mapEventTostate](https://github.com/felangel/bloc/issues/2526) with on\<Event\> as explained in [v9 migration guide](https://bloclibrary.dev/#/migration?id=packagebloc-1)
+- [Flutter bloc for begginners](https://medium.com/flutter-community/flutter-bloc-for-beginners-839e22adb9f5) - another good Flutter Bloc tutotrial that already uses the new API 
